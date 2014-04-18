@@ -11,3 +11,6 @@ Maven POM File에 다음을 추가
 		<artifactId>liferay-spring-parent</artifactId>
 		<version>1.0.0-RELEASE</version>
 	</parent>
+
+단, 레퍼지토리를 POM 파일에 아래와 같이 추가하여야 함.
+http://nexus.unionia.com:8888/nexus/content/groups/public/
