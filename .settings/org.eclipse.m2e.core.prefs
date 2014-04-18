@@ -1,0 +1,4 @@
+activeProfiles=LocalNexus, wildfly-remote, liferay-portal-portlet, redhat-techpreview-all-repository, dev, wildfly-local
+eclipse.preferences.version=1
+resolveWorkspaceProjects=true
+version=1

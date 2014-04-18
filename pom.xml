@@ -1,0 +1,102 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>com.soho.pom</groupId>
+	<artifactId>liferay-spring-parent</artifactId>
+	<version>1.0.0-RELEASE</version>
+	<packaging>pom</packaging>
+	<name>liferay-spring-parent</name>
+
+	<properties>
+
+		<plugin.type>portlet</plugin.type>
+		<liferay.version>6.2.1</liferay.version>
+		<liferay.maven.plugin.version>6.2.1</liferay.maven.plugin.version>
+		<liferay.auto.deploy.dir>/Users/anjongdeog/AppServer/liferay-portal/deploy</liferay.auto.deploy.dir>
+		<liferay.app.server.deploy.dir>/Users/anjongdeog/AppServer/liferay-portal/wildfly-8.0.0.Final/standalone/deployments</liferay.app.server.deploy.dir>
+		<liferay.app.server.lib.global.dir>/Users/anjongdeog/AppServer/liferay-portal/wildfly-8.0.0.Final/standalone/lib/ext</liferay.app.server.lib.global.dir>
+		<liferay.app.server.portal.dir>/Users/anjongdeog/AppServer/liferay-portal/wildfly-8.0.0.Final/standalone/deployments/ROOT.war</liferay.app.server.portal.dir>
+		<org.springframework.version>4.0.3.RELEASE</org.springframework.version>
+		<org.slf4j-version>1.7.7</org.slf4j-version>
+
+	</properties>
+
+	<distributionManagement>
+		<repository>
+			<id>liferay-releases</id>
+			<url>http://nexus.unionia.com:8888/nexus/content/repositories/liferay-releases</url>
+		</repository>
+	</distributionManagement>
+
+	<dependencies>
+		<dependency>
+			<groupId>com.liferay.portal</groupId>
+			<artifactId>portal-client</artifactId>
+			<version>${liferay.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>com.liferay.portal</groupId>
+			<artifactId>portal-impl</artifactId>
+			<version>${liferay.version}</version>
+			<scope>provided</scope>
+		</dependency>
+		<dependency>
+			<groupId>com.liferay.portal</groupId>
+			<artifactId>portal-pacl</artifactId>
+			<version>${liferay.version}</version>
+			<scope>provided</scope>
+		</dependency>
+		<dependency>
+			<groupId>com.liferay.portal</groupId>
+			<artifactId>portal-service</artifactId>
+			<version>${liferay.version}</version>
+			<scope>provided</scope>
+		</dependency>
+		<dependency>
+			<groupId>com.liferay.portal</groupId>
+			<artifactId>portal-web</artifactId>
+			<version>${liferay.version}</version>
+			<type>war</type>
+			<scope>provided</scope>
+		</dependency>
+		<dependency>
+			<groupId>com.liferay.portal</groupId>
+			<artifactId>util-bridges</artifactId>
+			<version>${liferay.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>com.liferay.portal</groupId>
+			<artifactId>util-java</artifactId>
+			<version>${liferay.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>com.liferay.portal</groupId>
+			<artifactId>util-slf4j</artifactId>
+			<version>${liferay.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>com.liferay.portal</groupId>
+			<artifactId>util-taglib</artifactId>
+			<version>${liferay.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-webmvc-portlet</artifactId>
+			<version>${org.springframework.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-orm</artifactId>
+			<version>${org.springframework.version}</version>
+		</dependency>
+	</dependencies>
+	<issueManagement>
+		<url>http://nas.unionia.com:5050/browse/LRSPRPRPOM/?selectedTab=com.soyatec.jira.plugins.jira-ganttchart-project:soyatec-gantt-project-tracking-panel</url>
+		<system>Jira</system>
+	</issueManagement>
+	<scm>
+		<url>https://github.com/zion64/liferay-spring-parent</url>
+		<developerConnection>안종덕</developerConnection>
+		<tag>liferay, spring, maven, pom</tag>
+	</scm>
+</project>
